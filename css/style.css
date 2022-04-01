@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(178, 196, 245);
+}
+.inicio {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 200px 980px 100px 200px;
+  grid-template-rows: 200px;
+  grid-template-areas: "logo nombre carro usuario";
+}
+.logo {
+  grid-area: logo;
+}
+.titulo {
+  grid-area: nombre;
+  align-self: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  justify-self: center;
+}
+.carrito {
+  grid-area: carro;
+  align-self: center;
+}
+.perfil {
+  grid-area: usuario;
+  align-self: center;
+}
+.frente {
+  margin-left: 420px;
+  width: 500px;
+}
+.footer {
+  background-color: rgb(178, 196, 245);
+  padding-left: 100px;
+  padding: 100px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 250px 350px 300px 310px;
+  grid-template-rows: 300px;
+  grid-template-areas: "contacto log info redes";
+}
+.log {
+  background-color: rgb(178, 196, 245);
+  width: 350px;
+  grid-area: log;
+  align-self: center;
+  padding-left: 50px;
+}
+.contacto {
+  grid-area: contacto;
+  align-self: center;
+}
+.info {
+  grid-area: info;
+  align-self: center;
+  padding-left: 150px;
+}
+.redes {
+  grid-area: redes;
+  align-self: center;
+  padding-left: 100px;
+}
+
+.inicial {
+  display: grid;
+  grid-template-columns: 100px;
+  grid-template-rows: 100px 300px;
+  grid-template-areas: "frente principal";
+}
+
+.principal {
+  grid-area: principal;
+  justify-content: center;
+}
+.frente {
+  grid-area: frente;
+  align-items: center;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+}
+.integrantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+}
+@media screen and( max-width:768px) {
+  .footer {
+    grid-template-columns: 250px 350px;
+    grid-template-rows: 300px;
+  }
+}
+@media screen and( max-width:500px) {
+  .footer {
+    grid-template-columns: 150px 250px;
+    grid-template-rows: 200px;
+  }
+}
